@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import { Jumbotron, Container, CardColumns, Card, Button } from 'react-bootstrap';
 
 import Auth from '../utils/auth';
-import GET_ME from '../utils/queries';
-import REMOVE_BOOK from '../utils/mutations';
+import {GET_ME} from '../utils/queries';
+import {REMOVE_BOOK} from '../utils/mutations';
 import { useQuery, useMutation } from '@apollo/client';
-import removeBookId from '../utils/localStorage';
+import { removeBookId } from '../utils/localStorage';
 
 // Won't need these while using the apollo/client
 // import { getMe, deleteBook } from '../utils/API';
-// import { removeBookId } from '../utils/localStorage';
+
 
 const SavedBooks = () => {
 
